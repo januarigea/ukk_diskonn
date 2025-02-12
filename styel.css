@@ -1,0 +1,87 @@
+/* Styling untuk body halaman */
+body {
+    /* Membuat background menggunakan radial-gradient dengan beberapa warna yang berubah secara bertahap */
+    background-image: radial-gradient(circle at 120.71% 50%, rgb(170, 235, 209) 0, rgb(104, 209, 172) 25%, rgb(8, 245, 150) 50%, rgb(0, 214, 121) 75%, rgb(2, 255, 103) 100%);
+    /* Menambahkan efek transisi untuk perubahan warna latar belakang dan warna teks selama 0.5 detik */
+    transition: background-color 0.5s, color 0.5s;
+}
+
+/* Styling untuk body dengan tema gelap */
+body.dark {
+    /* Mengubah warna latar belakang menjadi hitam gelap saat tema gelap diaktifkan */
+    background-color: #121212;
+    /* Mengubah warna teks menjadi putih saat tema gelap diaktifkan */
+    color: white;
+}
+
+/* Styling untuk kontainer utama */
+.container {
+    /* Lebar kontainer diatur 590px */
+    width: 590px;
+    /* Membuat kontainer mengisi seluruh tinggi layar */
+    height: 100vh;
+    /* Menyusun kontainer di tengah halaman secara horizontal */
+    margin: 0 auto;
+}
+
+/* Styling untuk header, misalnya judul atau teks header */
+.header {
+    /* Memberikan padding 15px untuk memberi jarak pada teks */
+    padding: 15px;
+    /* Mengatur warna teks menjadi putih */
+    color: #fff;
+}
+
+/* Styling untuk tombol dengan kelas custom-button */
+.custom-button {
+    /* Mengatur warna latar belakang tombol menjadi biru */
+    background-color: rgb(17, 104, 204);
+    /* Mengatur warna border tombol menjadi hitam */
+    border-color: rgb(0, 0, 0);
+}
+
+/* Efek hover untuk tombol custom-button */
+.custom-button:hover {
+    /* Mengubah warna latar belakang tombol menjadi putih saat disorot */
+    background-color: rgb(255, 255, 255);
+    /* Mengatur border tetap hitam saat tombol disorot */
+    border-color: rgb(0, 0, 0);
+}
+
+/* Efek hover untuk tombol pengubah tema */
+.toggle-theme-btn:hover {
+    /* Mengubah warna latar belakang tombol menjadi biru tua saat disorot */
+    background-color: #0056b3;
+}
+
+/* Styling untuk div yang menampilkan hasil perhitungan harga setelah diskon */
+.total-price {
+    /* Mengatur warna latar belakang menjadi hijau terang */
+    background-color: #28a745;
+    /* Mengatur warna teks menjadi putih */
+    color: white;
+    /* Memberikan padding agar isi div tidak terlalu rapat */
+    padding: 20px;
+    /* Membuat sudut div membulat */
+    border-radius: 8px;
+    /* Menambahkan bayangan pada div untuk memberikan efek kedalaman */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    /* Memberikan jarak di atas div */
+    margin-top: 20px;
+    /* Menyusun teks agar berada di tengah */
+    text-align: center;
+}
+
+/* Styling untuk judul dalam div total-price */
+.total-price h4 {
+    /* Mengatur ukuran font untuk judul menjadi sedikit lebih besar */
+    font-size: 1.5rem;
+    /* Memberikan ketebalan pada font judul */
+    font-weight: bold;
+}
+
+/* Styling untuk paragraf yang berisi hasil perhitungan dalam div total-price */
+.total-price p {
+    /* Mengatur ukuran font untuk hasil perhitungan */
+    font-size: 1.2rem;
+}
